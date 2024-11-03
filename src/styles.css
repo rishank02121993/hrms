@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.body{
+    background-color: #f7faff
+}
+
+.search-button{
+    color: #aeb1b0;
+    cursor: pointer;
+}
+
+nav a{
+    height: 50px;
+}

@@ -2,7 +2,7 @@
   <!-- Sidebar -->
   <div 
     [ngClass]="{'hidden': !isSidebarOpen}" 
-    class="fixed inset-y-0 left-0 z-20 w-64 bg-white border-r border-gray-200 shadow-lg lg:relative lg:block transition-transform transform lg:translate-x-0 h-100"
+    class="fixed inset-y-0 left-0 z-20 w-48 bg-white border-r border-gray-200 shadow-lg lg:relative lg:block transition-transform transform lg:translate-x-0 h-100"
     style="background-color:#f7faff;height: 100vh;">
     <div class="flex items-center justify-between px-4 py-4 logo">
       <h2 class="text-xl font-semibold text-blue-900 justify-center">HRMS</h2>
@@ -11,18 +11,39 @@
       </button>
     </div>
     <div class="flex justify-center">
-      <div class="rounded-full overflow-hidden border-4 border-gray-300" style="width: 100px;height: 100px;">
-        <img src="../../../../assets/profileimage.jpg" type="img" alt="Profile Image"  />
+      <div class="rounded-full overflow-hidden" style="width: 120px;height: 120px;">
+        <img src="../../../../assets/profile.jpg" type="img" alt="Profile Image"  />
       </div>
     </div>
     <nav class="mt-4">
-      <a href="#" class="block text-red-600 font-semibold hover:text-red-700 px-4 py-2">Dashboard</a>
-      <a href="#" class="block text-gray-700 hover:text-red-600 px-4 py-2">My Tasks</a>
-      <a href="#" class="block text-gray-700 hover:text-red-600 px-4 py-2">My Requests</a>
-      <a href="#" class="block text-gray-700 hover:text-red-600 px-4 py-2">My Profile</a>
-      <a href="#" class="block text-gray-700 hover:text-red-600 px-4 py-2">Notifications</a>
-      <a href="#" class="block text-gray-700 hover:text-red-600 px-4 py-2">Timesheets</a>
-      <a href="#" class="block text-gray-700 hover:text-red-600 px-4 py-2">Attendance</a>
+      <a href="#" class="font-semibold px-4 py-2 flex items-center cursor-pointer hover:bg-gray-100 hover: box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);">
+        <img src="../../../../assets/home-icons.svg" width="25px" class="mr-2">
+        <span class="font-semibold text-blue-900">Home</span>
+      </a>
+      <a href="#" class="font-semibold px-4 py-2 flex items-center cursor-pointer hover:bg-gray-100 hover: box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);">
+        <img src="../../../../assets/me-icons.svg" width="25px" class="mr-2">
+        <span class="font-semibold text-blue-900">Me</span>
+      </a>
+      <a href="#" class="font-semibold px-4 py-2 flex items-center cursor-pointer hover:bg-gray-100 hover: box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);">
+        <img src="../../../../assets/inbox-icons.svg" width="25px" class="mr-2">
+        <span class="font-semibold text-blue-900">Inbox</span>
+      </a>
+      <a href="#" class="font-semibold px-4 py-2 flex items-center cursor-pointer hover:bg-gray-100 hover: box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);">
+        <img src="../../../../assets/team-icons.svg" width="25px" class="mr-2">
+        <span class="font-semibold text-blue-900">My Team</span>
+      </a>
+      <a href="#" class="font-semibold px-4 py-2 flex items-center cursor-pointer hover:bg-gray-100 hover: box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);">
+        <img src="../../../../assets/finance-icons.svg" width="25px" class="mr-2">
+        <span class="font-semibold text-blue-900">My Finances</span>
+      </a>
+      <a href="#" class="font-semibold px-4 py-2 flex items-center cursor-pointer hover:bg-gray-100 hover: box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);">
+        <img src="../../../../assets/organization-icons.svg" width="25px" class="mr-2">
+        <span class="font-semibold text-blue-900">Organization</span>
+      </a>
+      <a href="#" class="font-semibold px-4 py-2 flex items-center cursor-pointer hover:bg-gray-100 hover: box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);">
+        <img src="../../../../assets/logout-icons.svg" width="25px" class="mr-2">
+        <span class="font-semibold text-blue-900">Logout</span>
+      </a>
     </nav>
   </div>
 
