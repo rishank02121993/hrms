@@ -1,48 +1,48 @@
 <div class="flex">
   <!-- Sidebar -->
   <div 
-    [ngClass]="{'hidden': !isSidebarOpen}" 
-    class="fixed inset-y-0 left-0 z-20 w-48 bg-white border-r border-gray-200 shadow-lg lg:relative lg:block transition-transform transform lg:translate-x-0 h-100"
-    style="background-color:#f7faff;height: 100vh;">
+    [ngClass]="{'hidden': !isSidebarOpen}" id="sidebar"
+    class="fixed inset-y-0 left-0 z-20 w-48 bg-lightblue dark:bg-gray-900 border-r border-gray-200 dark:border-gray-700 shadow-lg lg:relative lg:block transition-transform transform lg:translate-x-0 h-100"
+    style="height: 100vh;">
     <div class="flex items-center justify-between px-4 py-4 logo">
-      <h2 class="text-xl font-semibold text-blue-900 justify-center">HRMS</h2>
-      <button (click)="toggleSidebar()" class="text-gray-600 focus:outline-none lg:hidden">
+      <h2 class="text-xl font-semibold text-blue-900 dark:text-gray-300 justify-center">HRMS</h2>
+      <button (click)="toggleSidebar()" class="text-gray-600 dark:text-gray-400 focus:outline-none lg:hidden">
         <i class="fas fa-times"></i>
       </button>
     </div>
     <div class="flex justify-center">
-      <div class="rounded-full overflow-hidden" style="width: 120px;height: 120px;">
-        <img src="../../../../assets/profile.jpg" type="img" alt="Profile Image"  />
+      <div class="rounded-full overflow-hidden" style="width: 120px; height: 120px;">
+        <img src="../../../../assets/profile.jpg" alt="Profile Image" />
       </div>
     </div>
     <nav class="mt-4">
-      <a href="#" class="font-semibold px-4 py-2 flex items-center cursor-pointer hover:bg-gray-100 hover: box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);">
+      <a href="#" class="font-semibold px-4 py-2 flex items-center cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-md">
         <img src="../../../../assets/home-icons.svg" width="25px" class="mr-2">
-        <span class="font-semibold text-blue-900">Home</span>
+        <span class="font-semibold text-blue-900 dark:text-gray-300">Home</span>
       </a>
-      <a href="#" class="font-semibold px-4 py-2 flex items-center cursor-pointer hover:bg-gray-100 hover: box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);">
+      <a href="#" class="font-semibold px-4 py-2 flex items-center cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-md">
         <img src="../../../../assets/me-icons.svg" width="25px" class="mr-2">
-        <span class="font-semibold text-blue-900">Me</span>
+        <span class="font-semibold text-blue-900 dark:text-gray-300">Me</span>
       </a>
-      <a href="#" class="font-semibold px-4 py-2 flex items-center cursor-pointer hover:bg-gray-100 hover: box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);">
+      <a href="#" class="font-semibold px-4 py-2 flex items-center cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-md">
         <img src="../../../../assets/inbox-icons.svg" width="25px" class="mr-2">
-        <span class="font-semibold text-blue-900">Inbox</span>
+        <span class="font-semibold text-blue-900 dark:text-gray-300">Inbox</span>
       </a>
-      <a href="#" class="font-semibold px-4 py-2 flex items-center cursor-pointer hover:bg-gray-100 hover: box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);">
+      <a href="#" class="font-semibold px-4 py-2 flex items-center cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-md">
         <img src="../../../../assets/team-icons.svg" width="25px" class="mr-2">
-        <span class="font-semibold text-blue-900">My Team</span>
+        <span class="font-semibold text-blue-900 dark:text-gray-300">My Team</span>
       </a>
-      <a href="#" class="font-semibold px-4 py-2 flex items-center cursor-pointer hover:bg-gray-100 hover: box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);">
+      <a href="#" class="font-semibold px-4 py-2 flex items-center cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-md">
         <img src="../../../../assets/finance-icons.svg" width="25px" class="mr-2">
-        <span class="font-semibold text-blue-900">My Finances</span>
+        <span class="font-semibold text-blue-900 dark:text-gray-300">My Finances</span>
       </a>
-      <a href="#" class="font-semibold px-4 py-2 flex items-center cursor-pointer hover:bg-gray-100 hover: box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);">
+      <a href="#" class="font-semibold px-4 py-2 flex items-center cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-md">
         <img src="../../../../assets/organization-icons.svg" width="25px" class="mr-2">
-        <span class="font-semibold text-blue-900">Organization</span>
+        <span class="font-semibold text-blue-900 dark:text-gray-300">Organization</span>
       </a>
-      <a href="#" class="font-semibold px-4 py-2 flex items-center cursor-pointer hover:bg-gray-100 hover: box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);">
+      <a href="#" class="font-semibold px-4 py-2 flex items-center cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-md">
         <img src="../../../../assets/logout-icons.svg" width="25px" class="mr-2">
-        <span class="font-semibold text-blue-900">Logout</span>
+        <span class="font-semibold text-blue-900 dark:text-gray-300">Logout</span>
       </a>
     </nav>
   </div>
@@ -50,8 +50,8 @@
   <!-- Main Content -->
   <button 
       (click)="toggleSidebar()" 
-      class="lg:hidden p-4 text-gray-600 focus:outline-none"
+      class="lg:hidden p-4 text-gray-600 dark:text-gray-400 focus:outline-none"
     >
       <i class="fas fa-bars"></i>
-    </button>
+  </button>
 </div>

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .body{
-    background-color: #f7faff
+    background-color: #fff
 }
 
 .search-button{
@@ -13,4 +13,31 @@
 
 nav a{
     height: 50px;
+}
+
+#toggleTheme{
+    position: absolute;
+    height: fit-content;
+    top: 30px;
+    right: 15px;
+}
+
+#holidayImage{
+    margin-top: 10px;
+}
+
+.leave{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.upcomingHoliday-Name{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.upcomingHoliday-date{
+    font-size: 12px;
 }
