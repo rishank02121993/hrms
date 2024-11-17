@@ -8,12 +8,16 @@ import { Component, Renderer2 } from '@angular/core';
 export class UserComponent {
 isDarkMode = false;
 constructor(private renderer: Renderer2){}
+
 ngOnInit(): void {
-  // Check local storage for theme preference
-  const theme = localStorage.getItem('theme');
-  if (theme === 'dark') {
-    this.isDarkMode = true;
-    this.renderer.addClass(document.body, 'dark');
+  // Ensure we're in the browser before accessing localStorage
+  if (typeof window !== 'undefined') {
+    // Check local storage for theme preference
+    const theme = localStorage.getItem('theme');
+    if (theme === 'dark') {
+      this.isDarkMode = true;
+      this.renderer.addClass(document.body, 'dark');
+    }
   }
 }
 

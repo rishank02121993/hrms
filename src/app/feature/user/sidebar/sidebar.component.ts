@@ -7,8 +7,11 @@ import { Component } from '@angular/core';
 })
 export class SidebarComponent {
   isSidebarOpen = false;
+  isSubMenuOpen = false;
+
 
   toggleSidebar() {
     this.isSidebarOpen = !this.isSidebarOpen;
   }
+
 }

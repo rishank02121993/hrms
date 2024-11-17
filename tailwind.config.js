@@ -7,10 +7,14 @@ module.exports = {
   theme: {
     extend: {
       colors :{
-        lightblue: '#f7faff'
+        sidebar: '#a27fe0',
+        card: '#ede1fc',
+        submenu: '#9062e3'
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar')
+  ],
 }
 

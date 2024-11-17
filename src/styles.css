@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwindcss/scrollbar
 
 .body{
-    background-color: #fff
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
 }
 
 .search-button{
@@ -26,10 +29,11 @@ nav a{
     margin-top: 10px;
 }
 
-.leave{
+.card-header{
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 15px;
+    color: #7c85a1;
 }
 
 .upcomingHoliday-Name{
@@ -41,3 +45,15 @@ nav a{
 .upcomingHoliday-date{
     font-size: 12px;
 }
+
+.event-organizer{
+    color: #7c85a1 ;
+    font-size: 10px;
+}
+
+.event-organizer-user{
+    margin-left: -10px;
+}
+
+
+  

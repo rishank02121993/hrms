@@ -1,10 +1,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg fill="#1e3a8a" width="800px" height="800px" viewBox="0 0 36 36" version="1.1" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg fill="#ffffff" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" stroke="#ffffff">
 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-<g id="SVGRepo_iconCarrier"> <title>organization-solid</title> <polygon points="9.8 18.8 26.2 18.8 26.2 21.88 27.8 21.88 27.8 17.2 18.8 17.2 18.8 14 17.2 14 17.2 17.2 8.2 17.2 8.2 21.88 9.8 21.88 9.8 18.8" class="clr-i-solid clr-i-solid-path-1"/>
-<rect x="2" y="23" width="14" height="10" rx="2" ry="2" class="clr-i-solid clr-i-solid-path-2"/>
-<rect x="20" y="23" width="14" height="10" rx="2" ry="2" class="clr-i-solid clr-i-solid-path-3"/>
-<rect x="11" y="3" width="14" height="10" rx="2" ry="2" class="clr-i-solid clr-i-solid-path-4"/> <rect x="0" y="0" width="36" height="36" fill-opacity="0"/> </g>
+<g id="SVGRepo_iconCarrier"> <g> <g> <g> <path d="M237.268,208.958v7.63c0,2.672,2.167,4.838,4.838,4.838h27.787c2.672,0,4.838-2.167,4.838-4.838v-7.63 c43.862-8.735,77.027-47.516,77.027-93.907c0-52.801-42.957-95.759-95.759-95.759c-52.802,0-95.759,42.957-95.759,95.759 C160.241,161.442,193.406,200.223,237.268,208.958z"/> <path d="M172.785,301.191c-14.658,0-139.399,0-154.053,0C8.387,301.191,0,309.578,0,319.923v154.053 c0,10.345,8.387,18.732,18.732,18.732h154.053c10.345,0,18.732-8.387,18.732-18.732V319.924 C191.517,309.578,183.131,301.191,172.785,301.191z"/> <path d="M493.268,301.191c-14.658,0-139.399,0-154.053,0c-10.345,0-18.732,8.387-18.732,18.732v154.053 c0,10.345,8.387,18.732,18.732,18.732h154.053c10.345,0,18.732-8.387,18.732-18.732V319.924 C512,309.578,503.613,301.191,493.268,301.191z"/> <path d="M81.865,282.461c27.762,0,32.624,1.431,32.624-4.839h283.02c0,2.672,2.167,4.839,4.839,4.839h27.787 c2.672,0,4.839-2.167,4.839-4.839V258.89c0-10.345-8.387-18.732-18.732-18.732H95.759c-10.345,0-18.732,8.387-18.732,18.732 v18.732C77.027,280.294,79.193,282.461,81.865,282.461z"/> </g> </g> </g> </g>
 </svg>

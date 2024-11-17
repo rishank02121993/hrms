@@ -1,29 +1,155 @@
+<h1 class="text-xl font-bold my-4 dark:text-white">Dashboard</h1>
 <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 mt-4">
-    <div class="grid grid-cols-1 bg-lightblue dark:bg-gray-800 text-gray-900 dark:text-gray-100 md:grid-cols-[3fr_2fr] gap-4 rounded-md">
+    <div
+        class="grid grid-cols-1 bg-card dark:bg-gray-900 text-gray-900 dark:text-gray-100 md:grid-cols-[3fr_2fr] gap-4 rounded-md">
         <div class="col-span-1 p-5">
-            <div class="leave font-bold">Upcoming Holiday</div>
-            <div class="p-4 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md">
-                <div class="upcomingHoliday-Name font-semibold">Christmas</div>
-                <div class="upcomingHoliday-date text-gray-500 dark:text-gray-400">December 25, 2024</div>
+            <div class="card-header font-bold flex items-center">
+                <p class="mr-2">Upcoming Holiday</p><a class="cursor-pointer"><img src="../../../../assets/view-all.svg"
+                        class="w-6" /></a>
             </div>
+            <div class="upcomingHoliday-Name font-semibold">Christmas</div>
+            <div class="upcomingHoliday-date text-gray-500 dark:text-gray-400">December 25, 2024</div>
         </div>
-        <div class="col-span-1 p-5">
-            <div class="flex justify-end">
-                <a href="#" class="text-blue-600 dark:text-blue-400">View All</a>
-            </div>
-            <img src="../../../../assets/christmas.png" id="holidayImage" class="rounded-md shadow-lg">
+        <div class="col-span-1 flex justify-end sm:flex sm:justify-center pr-5">
+            <img src="../../../../assets/christmas.png" id="holidayImage" class="rounded-md"
+                style="width: 150px; height: 150px;">
         </div>
     </div>
-    <div class="col-span-1 md:col-span-1 bg-lightblue dark:bg-gray-800 dark:text-gray-100 p-4 rounded-md">
-        <div class="leave font-bold">Your Scheduled Leaves</div>
-        <div class="grid grid-cols-2 md:grid-cols-[4fr_1fr] gap-4">
-            <div class="p-4 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md">
+    <div class="col-span-1 md:col-span-1 bg-card dark:bg-gray-900 dark:text-gray-100 p-4 rounded-md">
+        <div class="card-header font-bold flex items-center">
+            <p class="mr-2">Your Scheduled Leaves</p><a class="cursor-pointer"><img
+                    src="../../../../assets/view-all.svg" class="w-6" /></a>
+        </div>
+        <div class="grid grid-cols-1">
+            <div
+                class="p-4 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md border-l-4 border-[#a6b5d0]">
                 <div class="upcomingHoliday-date font-semibold">1 Full day leave</div>
                 <div class="upcomingHoliday-Name text-gray-500 dark:text-gray-400">November 01, 2024</div>
             </div>
-            <div class="p-4 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md">
-                <div class="grid place-items-center justify-center">
-                    <a href="#" class="text-blue-600 dark:text-blue-400">View All</a>
+        </div>
+    </div>
+</div>
+<h1 class="text-xl font-bold my-4 dark:text-white">Message & Announcements</h1>
+<div class="grid grid-cols-2 md:grid-cols-[2fr_4fr] gap-4 mt-4" id="messaageAnnouncement">
+    <div class="grid grid-cols-1 bg-card dark:bg-gray-900 text-gray-900 dark:text-gray-100 rounded-md p-5">
+        <div class="card-header font-bold flex items-center pb-3 border-b-2 border-gray-300">
+            <div class="flex justify-between items-center w-full">
+                <div class="flex items-center">
+                    <p class="mr-2 text-sm">Today's Event</p>
+                    <a class="cursor-pointer">
+                        <img src="../../../../assets/view-all.svg" class="w-6" />
+                    </a>
+                </div>
+                <button class="ml-auto"><img src="../../../../assets/add.svg" class="w-10 h-10"></button>
+            </div>
+        </div>
+        <div class="h-80 overflow-auto scrollbar-thin">
+            <div
+                class="p-4 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md border-l-4 border-[#a6b5d0] mb-4">
+                <p class="text-xs font-bold flex justify-between items-center">Daily Meeting<span class="test-xs">3:30
+                        PM - 4:00 PM</span></p>
+                <p class="event-organizer">Rishank Kumar Mishra</p>
+                <div class="flex mt-3">
+                    @for (attendee of attendees;track attendee.name; let idx = $index) {
+                    <div class="flex items-center justify-center" [ngClass]="{ 'event-organizer-user': idx !== 0 }">
+                        <div class="w-8 h-8 rounded-full bg-blue-500 text-white flex items-center justify-center text-xs font-semibold"
+                            [ngStyle]="{ 'background-color': generateColor(idx) }">
+                            <span>{{ getInitials(attendee.name) }}</span>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+            <div
+                class="p-4 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md border-l-4 border-[#a6b5d0] mb-4">
+                <p class="text-xs font-bold flex justify-between items-center">Daily Meeting<span class="test-xs">3:30
+                        PM - 4:00 PM</span></p>
+                <p class="event-organizer">Rishank Kumar Mishra</p>
+                <div class="flex mt-3">
+                    @for (attendee of attendees;track attendee.name; let idx = $index) {
+                    <div class="flex items-center justify-center" [ngClass]="{ 'event-organizer-user': idx !== 0 }">
+                        <div class="w-8 h-8 rounded-full bg-blue-500 text-white flex items-center justify-center text-xs font-semibold"
+                            [ngStyle]="{ 'background-color': generateColor(idx) }">
+                            <span>{{ getInitials(attendee.name) }}</span>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+            <div
+                class="p-4 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md border-l-4 border-[#a6b5d0] mb-4">
+                <p class="text-xs font-bold flex justify-between items-center">Daily Meeting<span class="test-xs">3:30
+                        PM - 4:00 PM</span></p>
+                <p class="event-organizer">Rishank Kumar Mishra</p>
+                <div class="flex mt-3">
+                    @for (attendee of attendees;track attendee.name; let idx = $index) {
+                    <div class="flex items-center justify-center" [ngClass]="{ 'event-organizer-user': idx !== 0 }">
+                        <div class="w-8 h-8 rounded-full bg-blue-500 text-white flex items-center justify-center text-xs font-semibold"
+                            [ngStyle]="{ 'background-color': generateColor(idx) }">
+                            <span>{{ getInitials(attendee.name) }}</span>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid grid-cols-1 bg-card dark:bg-gray-900 text-gray-900 dark:text-gray-100 rounded-md p-5">
+        <div class="card-header font-bold flex items-center pb-3 border-b-2 border-gray-300">
+            <div class="flex justify-between items-center w-full">
+                <div class="flex items-center">
+                    <p class="mr-2 text-sm">Announcements</p>
+                    <a class="cursor-pointer">
+                        <img src="../../../../assets/view-all.svg" class="w-6" />
+                    </a>
+                </div>
+                <button class="ml-auto"><img src="../../../../assets/add.svg" class="w-10 h-10"></button>
+            </div>
+        </div>
+        <div class="h-80 overflow-auto scrollbar-thin">
+            <div class="p-4 bg-white bg-[#f8f3fe] dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md mb-4">
+                <div class="flex justify-between items-center w-full">
+                    <div class="items-center">
+                        <p class="text-xs font-bold">The Mail Design Deadline is on 26/12/2024</p>
+                        <p class="event-organizer mt-2">5 Minutes ago</p>
+                    </div>
+                    <button class="ml-auto"><img src="../../../../assets/redirect.svg" class="w-6 h-6"></button>
+                </div>
+            </div>
+            <div class="p-4 bg-white bg-[#f8f3fe] dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md mb-4">
+                <div class="flex justify-between items-center w-full">
+                    <div class="items-center">
+                        <p class="text-xs font-bold">The Mail Design Deadline is on 26/12/2024</p>
+                        <p class="event-organizer mt-2">5 Minutes ago</p>
+                    </div>
+                    <button class="ml-auto"><img src="../../../../assets/redirect.svg" class="w-6 h-6"></button>
+                </div>
+            </div>
+            <div class="p-4 bg-white bg-[#f8f3fe] dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md mb-4">
+                <div class="flex justify-between items-center w-full">
+                    <div class="items-center">
+                        <p class="text-xs font-bold">The Mail Design Deadline is on 26/12/2024</p>
+                        <p class="event-organizer mt-2">5 Minutes ago</p>
+                    </div>
+                    <button class="ml-auto"><img src="../../../../assets/redirect.svg" class="w-6 h-6"></button>
+                </div>
+            </div>
+            <div class="p-4 bg-white bg-[#f8f3fe] dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md mb-4">
+                <div class="flex justify-between items-center w-full">
+                    <div class="items-center">
+                        <p class="text-xs font-bold">The Mail Design Deadline is on 26/12/2024</p>
+                        <p class="event-organizer mt-2">5 Minutes ago</p>
+                    </div>
+                    <button class="ml-auto"><img src="../../../../assets/redirect.svg" class="w-6 h-6"></button>
+                </div>
+            </div>
+            <div class="p-4 bg-white bg-[#f8f3fe] dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md mb-4">
+                <div class="flex justify-between items-center w-full">
+                    <div class="items-center">
+                        <p class="text-xs font-bold">The Mail Design Deadline is on 26/12/2024</p>
+                        <p class="event-organizer mt-2">5 Minutes ago</p>
+                    </div>
+                    <button class="ml-auto"><img src="../../../../assets/redirect.svg" class="w-6 h-6"></button>
                 </div>
             </div>
         </div>

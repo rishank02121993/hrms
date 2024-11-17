@@ -1,12 +1,20 @@
 <div class="body font-sans">
 
     <div class="flex flex-col lg:flex-row min-h-screen">
-      <app-sidebar></app-sidebar>
-      <button id="toggleTheme" (click)="toggleTheme()" class="p-2 text-white bg-gray-800 dark:bg-gray-200 dark:text-gray-800 rounded">
-        <img src="../../../../assets/dark-theme.svg" style="width: 10px;">
-      </button>
+      <app-sidebar class="fixed left-0 top-0"></app-sidebar>
+      @if(isDarkMode){
+        <button id="toggleTheme" (click)="toggleTheme()" class="p-2 rounded w-10 h-10" style="top:25px">
+          <img src="../../../../assets/sun.svg">
+        </button>
+      }
+      @else{
+        <button id="toggleTheme" (click)="toggleTheme()" class="p-2 rounded w-10 h-10" style="top:25px">
+          <img src="../../../../assets/moon.svg">
+        </button>
+      }
+      
       <!-- Main Content Area -->
-      <main class="flex-1 p-4 dark:bg-gray-600">
+      <main class="flex-1 p-4 dark:bg-gray-800 ml-20 lg:ml-48">
         <app-header></app-header>
         <router-outlet />
         <app-footer></app-footer>
